@@ -1,0 +1,395 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'icomoon';
+    src:  url('/fonts/icomoon.eot?4tevjl');
+    src:  url('/fonts/icomoon.eot?4tevjl#iefix') format('embedded-opentype'),
+      url('/fonts/icomoon.ttf?4tevjl') format('truetype'),
+      url('/fonts/icomoon.woff?4tevjl') format('woff'),
+      url('/fonts/icomoon.svg?4tevjl#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-arrow-4:before {
+    content: "\e917";
+  }
+  .icon-arrow-3:before {
+    content: "\e918";
+  }
+  .icon-arrow-2:before {
+    content: "\e916";
+  }
+  .icon-pdf-file:before {
+    content: "\e919";
+  }
+  .icon-arrow-1:before {
+    content: "\e910";
+    color: #134563;
+  }
+  .icon-arrow:before {
+    content: "\e915";
+    color: #134563;
+  }
+  .icon-gear:before {
+    content: "\e90f";
+  }
+  .icon-pin1:before {
+    content: "\e905";
+  }
+  .icon-employee1:before {
+    content: "\e904";
+  }
+  .icon-checked:before {
+    content: "\e906";
+  }
+  .icon-mail-1:before {
+    content: "\e907";
+  }
+  .icon-mail:before {
+    content: "\e908";
+  }
+  .icon-pin-1:before {
+    content: "\e909";
+  }
+  .icon-phone:before {
+    content: "\e90a";
+  }
+  .icon-repair-tool-1:before {
+    content: "\e90b";
+  }
+  .icon-repair-tool:before {
+    content: "\e90c";
+  }
+  .icon-trust:before {
+    content: "\e90d";
+  }
+  .icon-reliability:before {
+    content: "\e90e";
+  }
+  .icon-box:before {
+    content: "\e911";
+  }
+  .icon-up-arrow:before {
+    content: "\e912";
+  }
+  .icon-right-arrow:before {
+    content: "\e913";
+  }
+  .icon-left-arrow:before {
+    content: "\e914";
+  }
+  .icon-city-building:before {
+    content: "\e900";
+  }
+  .icon-employee:before {
+    content: "\e901";
+  }
+  .icon-favorite-badge:before {
+    content: "\e902";
+  }
+  .icon-pin:before {
+    content: "\e903";
+  }
+  
+  
+  
+  
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+  
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  @layer base {
+      html {
+        font-family: 'Rubik',sans-serif;
+        
+  
+      }
+    }
+  *::after , *::before, * {
+      box-sizing: border-box;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .preloader {
+      @apply bg-slate-300 h-screen w-full absolute top-0 z-50 overflow-hidden flex justify-center items-center 
+  }
+  .header.sticky {
+   @apply fixed top-0 left-0 right-0 z-30  bg-white shadow-md 
+  }
+  
+  .menu__list {
+    @apply    flex flex-col lg:items-center lg:justify-between lg:flex-row 
+     
+   }
+  .menu__list>.menu__item {
+    @apply py-2.5
+  }
+  
+  .menu__list>.menu__item>.menu__link{
+      @apply text-white lg:text-black-17 text-center text-xs hover:text-red-226 duration-500 focus:text-red-226 font-bold uppercase block py-4 px-2.5 whitespace-nowrap xl:text-sm  relative  ;
+     
+  }
+  .dropdown-menu{
+    @apply  absolute hidden text-gray-700 pt-1 z-50;
+  } 
+  .subclass {
+    @apply rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block ;
+  }
+  .menu__item>.menu__link::after {
+    @apply  content-[''] block w-0 h-1 bg-red-226 absolute bottom-1 inset-x-0 mx-auto max-w-full
+  }
+  .menu__item .menu__link:hover::after {
+    @apply w-7/12 transition-all duration-200
+  }
+  .header-munu__burger {
+    @apply block cursor-pointer mx-2 lg:hidden block
+  }
+  .header-phone {
+    @apply hidden  lg:flex flex-shrink-0 
+  }
+  
+  .phone {
+    @apply bg-red-226 relative cursor-pointer
+  }
+  .phone-number {
+    @apply text-white font-bold text-lg uppercase inline-block relative overflow-hidden border-2 border-transparent border-solid py-0 px-6 align-middle leading-10
+  } 
+  
+  /*slider css*/
+  .swiper-pagination-bullet-active {
+    @apply !bg-red-226
+  }
+  .swiper-button-previous::after {
+    @apply !content-['']
+  }
+  .swiper-button-nextelementx::after {
+    @apply !content-['']
+  }
+  .swiper-button-previous {
+    @apply  !left-11
+  }
+  .swiper-button-nextelementx {
+    @apply  !right-11
+  }
+   .icon-left-arrow, .icon-right-arrow {
+    @apply text-4xl px-6 py-3 text-white border border-red-226 border-solid cursor-pointer relative
+  }
+  .icon-right-arrow::after { 
+    @apply bg-red-226 content-[''] left-0  top-0 w-2.5 h-full z-[-1] transition-all duration-300 absolute
+  }
+  .icon-left-arrow::after {
+    @apply bg-red-226 content-[''] left-auto right-0  top-0 w-2.5 h-full z-[-1] transition-all duration-300 absolute
+  }
+  .swiper-button-previous:hover span::after ,.swiper-button-nextelementx:hover span::after {
+    @apply w-full
+  } 
+  
+  /*service */
+  .header-block__title::after {
+    @apply content-[''] h-1 w-20 bg-red-226 absolute top-auto left-0 right-0 bottom-0 text-center  mx-auto my-0
+  }
+  .service__item-number {
+    @apply font-bold text-5xl text-black leading-[80%] mb-3 
+  }
+  .service__item-text { 
+    @apply w-52 m-0 ml-4 text-sm leading-4 text-black
+  }
+  .service__item-text::after { 
+    @apply content-[''] h-1 w-16 bg-red-226 absolute top-auto left-0 right-0 bottom-0
+  }
+  .list li{
+    @apply text-base pb-5 text-black leading-4 m-0 relative
+  }
+  /* tech style*/
+  .tech-item:hover>.tech-link, .active>.tech-link{
+    @apply text-white bg-red-226 transition-all ease-in-out duration-700
+  }
+  .tech-item:hover>.tech-link::before { 
+    @apply w-full
+  }
+  .tech-link {
+    @apply py-1 pr-1 pl-3 relative text-sm overflow-hidden block z-10  text-center bg-transparent border border-solid  border-stone-50 transition-[width] duration-150 ease-in-out  mt-0 mr-1 mb-2 ml-0 text-black
+  }
+  .tech-link::before {
+    @apply content-[''] absolute left-0 top-0 w-2.5 h-full z-[-1] bg-red-226 transition-all duration-700
+  
+  }
+  .lazyloaded {
+    @apply block m-auto max-w-full w-auto h-auto transition-all duration-150 align-middle
+  }
+  .tech_item_text_text::before {
+    @apply content-[''] w-16 h-[2px] bg-red-226 mb-1 block
+  }
+  .show {
+    @apply  block
+  }
+  /*about style*/
+  .about_column {
+    @apply relative w-full px-3.5
+  }
+  .about_image::before {
+    @apply content-[''] bg-red-226 block h-3/6 z-[10] absolute  w-3/6 right-5 left-0
+  }
+  .img_about {
+    @apply pt-5 pl-5 lg:pt-9 lg:pl-9 max-w-full h-auto transition-all duration-75 align-middle 
+  }
+  /*satisfy-clients*/
+  .satisfy-clients {
+    @apply bg-[url('/assets/img/web/banner-1920x450.jpg')] relative w-full m-0 bg-cover bg-center bg-no-repeat bg-fixed transition-shadow py-20
+  }
+  .satisfy-clients::before {
+    @apply content-[''] bg-black-17 absolute top-0 left-0 w-full h-full opacity-5
+  }
+  .item_benefits_body {
+    @apply mt-3.5  mb-10  text-left transition-all duration-100
+  }
+  .benefits_icon {
+    @apply text-white  mb-2.5  text-5xl w-11 h-16 flex items-center justify-center relative overflow-hidden transition-all duration-100
+  }
+  .benefits_title {
+    @apply text-white text-lg font-semibold mb-5
+  }
+  .benefits_text {
+    @apply text-white text-sm mb-2.5 mt-0
+  }
+  /*Contactus style*/
+  .contactus {
+    @apply  bg-[url('/assets/img/web/map-bg.png')]  bg-right bg-no-repeat pt-20
+  }
+  .form-control {
+    @apply h-12 py-1.5 px-5 border-2 border-solid border-white w-full bg-none block  text-base font-normal text-white bg-transparent placeholder-white
+  }
+  .form-control:focus {
+    @apply  border-2 border-solid border-white border-b-2  border-b-red-226 text-black bg-white outline-0 
+  }
+  .custom-checkbox{
+    @apply   cursor-pointer text-sm flex 
+  }
+  .custom-checkbox::before {
+    @apply content-[''] w-5 h-5 border-2  border-solid border-red-226 outline-2 outline    outline-white rounded-sm mr-2 bg-white
+  }
+  .checkbox{
+    @apply cursor-pointer opacity-0 absolute
+  }
+  .checkbox:checked + .custom-checkbox::before{
+    @apply content-['\002714'] bg-red-226 flex items-center justify-center
+  }
+  .btn-submit {
+    @apply bg-transparent text-white cursor-pointer border-2  transition-all duration-300 border-solid border-gray-300 font-medium text-sm uppercase inline-block relative overflow-hidden px-6 text-center leading-10
+  }
+  .contactus_info {
+    @apply lg:py-16 lg:px-12 p-5 shadow-md bg-white
+  }
+  .locations {
+    @apply mb-4 my-4 flex flex-wrap pl-0 mt-0
+  }
+  .location-item {
+    @apply mr-2.5 relative 
+  }
+  .location-link {
+    @apply bg-red-226 text-white rounded block py-2 px-4 text-xs font-normal
+  }
+  .title-contact-label {
+    @apply mb-2.5 text-black font-semibold text-xl
+  }
+  .icon-contact {
+    @apply text-red-226 font-black mr-2 text-3xl align-middle
+  }
+  .decription-contact {
+    @apply  text-slate-500 m-0 text-base
+  }
+  /*Footer style*/
+  .img-logo-footer{
+    @apply max-w-full w-auto h-auto 
+  }
+  /*Modal style*/
+  .modal {
+    @apply overflow-x-hidden overflow-y-auto fixed hidden top-0  left-0 z-[1050] w-full h-full outline-0 transition-opacity
+  }
+  .modal-dialog {
+    @apply  lg:max-w-[1140px] lg:my-7 mx-auto min-h-[calc(100%-3.5rem)] flex items-center relative
+  
+  }
+  .modal-content {
+    @apply  relative flex flex-col w-full bg-white border border-solid divide-slate-700 rounded-md
+  }
+  .close {
+    @apply absolute right-3.5 top-2.5 z-20 cursor-pointer p-0  bg-transparent float-right text-2xl font-bold text-black
+  }
+  .modal-body {
+    @apply p-0 relative flex-[1_1_auto] p-5
+  }
+  .modal-title {
+    @apply text-2xl mb-5 text-black font-semibold
+  }
+  .gallery  {
+    @apply w-full max-w-[470px] overflow-hidden
+  }
+  .gallery-slider {
+    @apply w-full h-auto mb-2.5 relative
+  }
+  .gallery .swiper-slide {
+    @apply w-auto h-auto
+  }
+  .swiper-slide img {
+    @apply block w-full  h-full my-0 mx-auto
+  }
+  .gallery-thumbs {
+    @apply w-full h-16 p-0 overflow-hidden 
+  }
+  .gallery-thumbs .swiper-slide {
+    @apply w-[100px] h-auto text-center overflow-hidden
+  }
+  .gallery-thumbs .swiper-slide img { 
+    @apply w-auto  h-16
+  }
+  .content-left {
+    @apply lg:max-w-[470px] w-full lg:mr-12 mb-2.5 p-5 float-left
+  }
+  .content-right {
+    @apply w-full
+  }
+  
+  .swiper-button-white {
+    @apply  text-4xl text-black
+  }
+  .swiper-button-white::after {
+    @apply  !content-['']
+  }
+  .next {
+    @apply  right-0
+   
+  }
+  .red {
+    @apply !bg-red-226
+  }
+  .scroll-up-btn {
+    @apply text-center lg:block hidden
+  }
+  .scroll-up-btn a {
+    @apply block border border-solid border-red-226 text-white text-base leading-6 shadow-red-500/50 fixed z-50 bottom-5 right-5 px-2.5 pb-2  bg-red-226 
+  }
+  
